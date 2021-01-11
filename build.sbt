@@ -1,5 +1,6 @@
 import Dependencies._
 
+// target/scala-2.13/sql-join-expression_2.13-0.1.0-SNAPSHOT.jar
 ThisBuild / scalaVersion          := "2.13.4"
 ThisBuild / version               := "0.1.0-SNAPSHOT"
 ThisBuild / organization          := "github.com.vasnake"
