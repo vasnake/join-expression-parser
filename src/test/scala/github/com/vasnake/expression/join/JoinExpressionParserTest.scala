@@ -1,5 +1,7 @@
-/**
- * Created by vasnake@gmail.com on 2021-01-11
+/*
+ * Copyright (c) 2020-2021, vasnake@gmail.com
+ *
+ * Licensed under GNU General Public License v3.0 (see LICENSE)
  */
 
 // github.com.vasnake.expression.join.JoinExpressionParser
