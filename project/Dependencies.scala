@@ -14,4 +14,8 @@ object Dependencies {
     "com.holdenkarau" %% "spark-testing-base" % s"${sparkVersion}_1.0.0"
   )
 
+  lazy val libs: Seq[ModuleID] = Seq(
+    "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2"
+  )
+
 }

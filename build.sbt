@@ -8,5 +8,5 @@ ThisBuild / organizationHomepage  := Some(url("https://github.com/vasnake/join-e
 lazy val root = (project in file("."))
   .settings(
     name := "sql-join-expression",
-    libraryDependencies ++= (sparkModules ++ testModules).map(_ % Test)
+    libraryDependencies ++= libs ++ (sparkModules ++ testModules).map(_ % Test)
   )
