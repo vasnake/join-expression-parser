@@ -4,13 +4,13 @@
  * Licensed under GNU General Public License v3.0 (see LICENSE)
  */
 
-// github.com.vasnake.expression.join.JoinExpressionParser
 package github.com.vasnake.expression.join
 
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
-class JoinExpressionParserTest extends AnyFlatSpec with Matchers {
+class JoinExpressionParserTest extends
+  AnyFlatSpec with Matchers {
 
   it should "parse join rules" in {
     JoinExpressionParser("a inner b").toString shouldEqual "Tree(Node(a),Node(b),inner)"
