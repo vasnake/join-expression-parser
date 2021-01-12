@@ -1,7 +1,6 @@
 import Dependencies._
 
-// target/scala-2.13/sql-join-expression_2.13-0.1.0-SNAPSHOT.jar
-ThisBuild / scalaVersion          := "2.13.4"
+ThisBuild / scalaVersion          := "2.12.12"
 ThisBuild / version               := "0.1.0-SNAPSHOT"
 ThisBuild / organization          := "github.com.vasnake"
 ThisBuild / organizationHomepage  := Some(url("https://github.com/vasnake/join-expression-parser"))
@@ -9,5 +8,5 @@ ThisBuild / organizationHomepage  := Some(url("https://github.com/vasnake/join-e
 lazy val root = (project in file("."))
   .settings(
     name := "sql-join-expression",
-    libraryDependencies += scalaTest % Test
+    libraryDependencies ++= (sparkModules ++ testModules).map(_ % Test)
   )
